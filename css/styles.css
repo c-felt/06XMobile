@@ -317,11 +317,12 @@ body {
   font-family: "Spline Sans", sans-serif;
   font-weight: 300;
   min-width: 320px;
+  background-color: #fdf5df;
 }
 
 /* --------------------------- HEADER --------------------------- */
 #headerWrapper {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
 }
 
 header {
@@ -335,7 +336,7 @@ header {
 header span {
   font-size: 1.6rem;
   font-weight: 300;
-  color: #1d295f;
+  color: black;
 }
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
@@ -360,7 +361,7 @@ header span {
   position: absolute;
   right: 10px;
   width: 200px;
-  background: #fff;
+  background: #fdf5df;
   list-style-type: none;
   margin: 6;
   padding: 0;
@@ -371,15 +372,16 @@ header span {
   display: none;
 }
 #primaryNav ul li a {
-  color: #1d295f;
+  color: black;
   display: block;
   padding: 0.75rem 10px;
   text-decoration: none;
 }
 #primaryNav ul li.active a {
-  background-color: #7c1d47;
-  color: white;
+  background-color: #5ebec4;
+  color: #fff;
   font-weight: 500;
+  border-radius: 8px;
 }
 
 #primaryNav ul.open {
@@ -390,7 +392,7 @@ header span {
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
   font-size: 1.5rem;
-  color: #7c1d47;
+  color: #5ebec4;
   font-weight: 300;
 }
 main p {
@@ -500,18 +502,18 @@ main img {
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-  background-color: #1d295f;
+  background-color: #5ebec4;
 }
 
 footer {
   font-size: 0.85rem;
   padding: 1rem 10px;
-  color: #ccc;
+  color: #fff;
   text-align: center;
   line-height: 150%;
 }
 footer a {
-  color: #ccc;
+  color: #fff;
 }
 
 @media only screen and (min-width: 39rem) {
@@ -534,8 +536,8 @@ footer a {
     padding: 0.4rem 1rem;
   }
   #primaryNav ul a:hover, #primaryNav ul.open a:hover {
-    -webkit-text-decoration: underline 4px #3990c3;
-            text-decoration: underline 4px #3990c3;
+    transform: translateY(5px);
+    transition: transform 0.2s ease-in-out;
   }
   .medium-1 {
     flex-basis: 8.3333333333%;
