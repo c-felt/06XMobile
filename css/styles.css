@@ -317,14 +317,10 @@ body {
   font-family: "Spline Sans", sans-serif;
   font-weight: 300;
   min-width: 320px;
-  background-color: #fdf5df;
+  background-color: white;
 }
 
 /* --------------------------- HEADER --------------------------- */
-#headerWrapper {
-  border-bottom: 1px solid #fff;
-}
-
 header {
   display: grid;
   grid-template-columns: 50px auto 44px;
@@ -361,7 +357,7 @@ header span {
   position: absolute;
   right: 10px;
   width: 200px;
-  background: #fdf5df;
+  background: white;
   list-style-type: none;
   margin: 6;
   padding: 0;
@@ -378,7 +374,7 @@ header span {
   text-decoration: none;
 }
 #primaryNav ul li.active a {
-  background-color: #5ebec4;
+  background-color: #307E82;
   color: #fff;
   font-weight: 500;
   border-radius: 8px;
@@ -390,10 +386,25 @@ header span {
 
 /* --------------------------- MAIN --------------------------- */
 main h1 {
-  padding: 1rem 10px 0.5rem 10px;
+  padding: 1rem 10px 0 10px;
   font-size: 1.5rem;
-  color: #5ebec4;
+  color: #307E82;
+  font-weight: 500;
+  text-align: center;
+  border-top: solid 2px black;
+}
+main .subtitle h3 {
+  text-align: center;
   font-weight: 300;
+  padding: 0 0 20px 0;
+  margin: 0;
+  border-bottom: solid 2px black;
+}
+main h3 {
+  text-align: center;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
 }
 main p {
   padding: 0.5rem 10px;
@@ -407,6 +418,23 @@ main p {
 
 #primaryNav ul.open {
   display: block;
+}
+
+.btnPrice {
+  background-color: #fcd494;
+  display: block;
+  margin: 20px auto;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  color: #000;
+  border-radius: 8px;
+  border-color: #fcd494;
+  cursor: pointer;
+}
+
+.btnPrice:hover {
+  transform: translateY(5px);
+  transition: transform 0.2s ease-in-out;
 }
 
 /* --------------------------- Images --------------------------- */
@@ -493,20 +521,31 @@ main img {
 }
 
 .fill {
-  background-color: #eee;
+  background-color: #CAD8C8;
+}
+
+.fill2 {
+  background-color: #97BAB1;
+  padding: 0;
+}
+
+.round, .fill2 {
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .shadow {
-  box-shadow: 0 0 10px #eee;
+  box-shadow: 0 0 10px #333;
 }
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-  background-color: #5ebec4;
+  background-color: #307E82;
 }
 
 footer {
   font-size: 0.85rem;
+  font-weight: 500;
   padding: 1rem 10px;
   color: #fff;
   text-align: center;

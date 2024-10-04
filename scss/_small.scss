@@ -22,7 +22,7 @@ body {
 
 
 /* --------------------------- HEADER --------------------------- */
-#headerWrapper {border-bottom: 1px solid $whiteColor;}
+// #headerWrapper {}
 header {
     display: grid;
     grid-template-columns: 50px auto 44px;
@@ -92,10 +92,26 @@ header {
 /* --------------------------- MAIN --------------------------- */
 main {
     h1 {
-        padding: 1rem $gutter.5rem $gutter;
+        padding: 1rem $gutter 0 $gutter;
         font-size: 1.5rem;
         color: $secondaryColor;
-        font-weight: $lightWeight
+        font-weight: $normalWeight;
+        text-align: center;
+        border-top: solid 2px black;
+    }
+    .subtitle h3 {
+        text-align: center;
+        font-weight: $lightWeight;
+        padding: 0 0 20px 0;
+        margin: 0;
+        border-bottom: solid 2px black;
+    
+    }
+    h3 {
+        text-align: center;
+        font-weight: $lightWeight;
+        padding: 0;
+        margin: 0;
     }
     p {
         padding: .5rem $gutter;
@@ -110,6 +126,23 @@ main {
 
 #primaryNav ul.open {
     display: block;
+}
+
+.btnPrice {
+    background-color: #fcd494;   
+    display: block;
+    margin: 20px auto;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    color: #000;
+    border-radius: 8px; 
+    border-color: #fcd494;
+    cursor: pointer;
+}
+
+.btnPrice:hover {
+    transform: translateY(5px);
+    transition: transform .20s ease-in-out;
 }
 
 /* --------------------------- Images --------------------------- */
@@ -152,10 +185,18 @@ main img {
     border-radius: 9px;
 }
 .fill {
-    background-color: #eee;
+    background-color: #CAD8C8;
 }
+.fill2 {
+    background-color: #97BAB1;
+    padding: 0;
+}
+.round, .fill2 {
+    padding: 10px;
+    margin-bottom: 10px;
+} 
 .shadow {
-    box-shadow: 0 0 10px #eee;
+    box-shadow: 0 0 10px #333;
 }
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
@@ -165,6 +206,7 @@ main img {
 
 footer {
     font-size: .85rem;
+    font-weight: $normalWeight;
     padding: 1rem $gutter;
     color: $whiteColor;
     text-align: center;
