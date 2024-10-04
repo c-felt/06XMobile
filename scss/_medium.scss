@@ -2,7 +2,6 @@
 #primaryNav button {
     display: none;
 }
-
 header {grid-template-columns: 50px auto auto;}
 #primaryNav ul, #primaryNav ul.open {
     display: flex;
@@ -20,7 +19,6 @@ header {grid-template-columns: 50px auto auto;}
         transition: transform .20s ease-in-out;
     }
 }
-
 @for $i from 1 through 12 {
     $width: calc($i/ 12) * 100%;
     .medium-#{$i} {flex-basis: $width;}

@@ -314,7 +314,7 @@ html {
 
 /* --------------------------- BODY --------------------------- */
 body {
-  font-family: "Spline Sans", sans-serif;
+  font-family: "Afacad Flux", sans-serif;
   font-weight: 300;
   min-width: 320px;
   background-color: white;
@@ -412,6 +412,7 @@ main p {
   line-height: 150%;
 }
 
+/* --------------------------- Button Stuff --------------------------- */
 #primaryNav button.open::before {
   content: "✕";
 }

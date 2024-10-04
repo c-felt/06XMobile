@@ -3,15 +3,12 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
-
 /*  Apply a natural box layout model to all elements  */
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 } // end all elements
-
-
 /* --------------------------- BODY --------------------------- */
 body {
     font-family: $defaultFont;
@@ -19,8 +16,6 @@ body {
     min-width: 320px;
     background-color: $primaryColor;
 }
-
-
 /* --------------------------- HEADER --------------------------- */
 // #headerWrapper {}
 header {
@@ -35,14 +30,10 @@ header {
         color: $font;
     }
 } // end header
-
-
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
-
 #primaryNav button::before {
     content: "\2630";
 }
-
 //style for the button
 #primaryNav button {
     border: none;
@@ -56,7 +47,6 @@ header {
     right: 0;
     cursor: pointer;
 }
-
 #primaryNav ul {
     position: absolute;
     right: $gutter;
@@ -87,8 +77,6 @@ header {
 #primaryNav ul.open {
     display: block; /* Show the menu */
 }
-
-
 /* --------------------------- MAIN --------------------------- */
 main {
     h1 {
@@ -119,7 +107,7 @@ main {
         line-height: $leading;
     }
 }// end main
-
+/* --------------------------- Button Stuff --------------------------- */
 #primaryNav button.open::before {
     content: "\2715";
 }
@@ -144,13 +132,11 @@ main {
     transform: translateY(5px);
     transition: transform .20s ease-in-out;
 }
-
 /* --------------------------- Images --------------------------- */
 main img {
     width: 100%;
     height: auto;
 }
-
 /* --------------------------- CSS for rows --------------------------- */
 .row {
     display:flex;
@@ -160,15 +146,12 @@ main img {
     padding: 0 8px;
     // border: greenyellow solid 3px;
 }
-
 /* --------------------------- CSS for columns --------------------------- */
 .column {
     padding: 0 8px;
     margin: 8px 0;
     flex: 1;
 }
-
-
 /* --------------------------- CSS for loop --------------------------- */
 @for $i from 1 through 12 {
     $width: calc($i/ 12) * 100%;
